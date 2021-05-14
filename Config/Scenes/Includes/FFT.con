@@ -1,0 +1,16 @@
+#build views for fft
+echo vi FFT audio_fft
+echo vi CHROMA audio_chroma
+vp detect 800 -2 2
+vpd detect representation:Whistle:detected red
+
+echo -- use GameInfo on remote robot --
+echo change state in GameInfo to '2' (SET)
+vd representation:GameInfo
+
+echo -- use 'gc set' in simulator --
+echo gc set
+
+vd parameters:WhistleDetector2019
+vd parameters:WhistleDetectorMono2019
+echo set parameters:AudioProviderDortmund params = { retries = 10; retryDelay = 500; channels = 4; sampleRate = 22050; maxFrames = 10000; simulateWhistleInSimulator = true; simulateSinusInSimulator = -1; simulateNoiseInSimulator = -1; audioFileName = "go19_whistle-while-testings_4ch_22050Hz_S16_LE.raw"; };

@@ -1,0 +1,11 @@
+call Includes/FieldViews1
+call Includes/FieldViewsLoca
+
+# ground truth view layers
+vfd worldState representation:GroundTruthRobotPose
+# from now, relative to ground truth robot pose
+vfd worldState origin:GroundTruthRobotPose
+vfd worldState representation:GroundTruthBallModel
+
+call Includes/FieldViews2
+call Includes/Behavior

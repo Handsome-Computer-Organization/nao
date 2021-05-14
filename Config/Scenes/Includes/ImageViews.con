@@ -1,0 +1,8 @@
+vi image lower
+vi imageUpper upper
+
+call Includes/Perception
+
+# 3-D image views
+v3 image lower
+v3 imageUpper upper

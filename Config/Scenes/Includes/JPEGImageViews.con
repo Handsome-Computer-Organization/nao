@@ -1,0 +1,8 @@
+vi image jpeg lower gain 1.0
+vi imageUpper jpeg upper gain 1.0
+
+call Includes/Perception
+
+# 3-D image views
+v3 image jpeg lower
+v3 image jpeg upper upper
